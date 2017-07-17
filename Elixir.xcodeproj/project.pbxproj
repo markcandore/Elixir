@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5F6BBE2F1F1D2A5700A157E2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F6BBE2E1F1D2A5700A157E2 /* GoogleService-Info.plist */; };
 		5FEE06291F1D278E00FFECE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEE06281F1D278E00FFECE8 /* AppDelegate.swift */; };
 		5FEE062B1F1D278E00FFECE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FEE062A1F1D278E00FFECE8 /* ViewController.swift */; };
 		5FEE062E1F1D278E00FFECE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FEE062C1F1D278E00FFECE8 /* Main.storyboard */; };
 		5FEE06301F1D278E00FFECE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FEE062F1F1D278E00FFECE8 /* Assets.xcassets */; };
 		5FEE06331F1D278E00FFECE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FEE06311F1D278E00FFECE8 /* LaunchScreen.storyboard */; };
+		B3C0504973FBF860041682F4 /* Pods_Elixir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2465B0FAB0BDB5674D53CDA6 /* Pods_Elixir.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2465B0FAB0BDB5674D53CDA6 /* Pods_Elixir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Elixir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F6BBE2E1F1D2A5700A157E2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5FEE06251F1D278E00FFECE8 /* Elixir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elixir.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FEE06281F1D278E00FFECE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FEE062A1F1D278E00FFECE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5FEE062D1F1D278E00FFECE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5FEE062F1F1D278E00FFECE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5FEE062F1F1D278E00FFECE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Elixir/Assets.xcassets; sourceTree = "<group>"; };
 		5FEE06321F1D278E00FFECE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5FEE06341F1D278E00FFECE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B41B9E44DD1F7C797B7825C /* Pods-Elixir.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elixir.release.xcconfig"; path = "Pods/Target Support Files/Pods-Elixir/Pods-Elixir.release.xcconfig"; sourceTree = "<group>"; };
+		6DA9BF3E1EB085A4166ECC1E /* Pods-Elixir.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Elixir.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Elixir/Pods-Elixir.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3C0504973FBF860041682F4 /* Pods_Elixir.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F6BBE301F1D54FD00A157E2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5FEE062C1F1D278E00FFECE8 /* Main.storyboard */,
+				5FEE06311F1D278E00FFECE8 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		5F6BBE311F1D552600A157E2 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5FEE062A1F1D278E00FFECE8 /* ViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		5F6BBE321F1D554000A157E2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		5F6BBE351F1D558A00A157E2 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5FEE06341F1D278E00FFECE8 /* Info.plist */,
+				5F6BBE2E1F1D2A5700A157E2 /* GoogleService-Info.plist */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
 		5FEE061C1F1D278E00FFECE8 = {
 			isa = PBXGroup;
 			children = (
 				5FEE06271F1D278E00FFECE8 /* Elixir */,
+				5FEE062F1F1D278E00FFECE8 /* Assets.xcassets */,
 				5FEE06261F1D278E00FFECE8 /* Products */,
+				EFFA9429B87320CC0F50276E /* Pods */,
+				F8CEB9706C21F09F6C3E1E83 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +98,29 @@
 			isa = PBXGroup;
 			children = (
 				5FEE06281F1D278E00FFECE8 /* AppDelegate.swift */,
-				5FEE062A1F1D278E00FFECE8 /* ViewController.swift */,
-				5FEE062C1F1D278E00FFECE8 /* Main.storyboard */,
-				5FEE062F1F1D278E00FFECE8 /* Assets.xcassets */,
-				5FEE06311F1D278E00FFECE8 /* LaunchScreen.storyboard */,
-				5FEE06341F1D278E00FFECE8 /* Info.plist */,
+				5F6BBE321F1D554000A157E2 /* Models */,
+				5F6BBE311F1D552600A157E2 /* View Controllers */,
+				5F6BBE301F1D54FD00A157E2 /* Storyboards */,
+				5F6BBE351F1D558A00A157E2 /* Services */,
 			);
 			path = Elixir;
+			sourceTree = "<group>";
+		};
+		EFFA9429B87320CC0F50276E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DA9BF3E1EB085A4166ECC1E /* Pods-Elixir.debug.xcconfig */,
+				6B41B9E44DD1F7C797B7825C /* Pods-Elixir.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F8CEB9706C21F09F6C3E1E83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2465B0FAB0BDB5674D53CDA6 /* Pods_Elixir.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5FEE06371F1D278E00FFECE8 /* Build configuration list for PBXNativeTarget "Elixir" */;
 			buildPhases = (
+				2F1624243CEE58BE6682932A /* [CP] Check Pods Manifest.lock */,
 				5FEE06211F1D278E00FFECE8 /* Sources */,
 				5FEE06221F1D278E00FFECE8 /* Frameworks */,
 				5FEE06231F1D278E00FFECE8 /* Resources */,
+				85286D1066C19F88482F6070 /* [CP] Embed Pods Frameworks */,
+				88B23252FB54B5F23CBDC451 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,12 +187,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FEE06331F1D278E00FFECE8 /* LaunchScreen.storyboard in Resources */,
+				5F6BBE2F1F1D2A5700A157E2 /* GoogleService-Info.plist in Resources */,
 				5FEE06301F1D278E00FFECE8 /* Assets.xcassets in Resources */,
 				5FEE062E1F1D278E00FFECE8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F1624243CEE58BE6682932A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		85286D1066C19F88482F6070 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Elixir/Pods-Elixir-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88B23252FB54B5F23CBDC451 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Elixir/Pods-Elixir-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5FEE06211F1D278E00FFECE8 /* Sources */ = {
@@ -259,6 +370,7 @@
 		};
 		5FEE06381F1D278E00FFECE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DA9BF3E1EB085A4166ECC1E /* Pods-Elixir.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MMWEE7C9T8;
@@ -272,6 +384,7 @@
 		};
 		5FEE06391F1D278E00FFECE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B41B9E44DD1F7C797B7825C /* Pods-Elixir.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MMWEE7C9T8;
@@ -302,6 +415,7 @@
 				5FEE06391F1D278E00FFECE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
